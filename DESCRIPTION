@@ -1,0 +1,19 @@
+Package: mypkgr
+Title: Example of a package for teaching advanced R
+Version: 0.0.0.9000
+Authors@R: person("Boris", "Hejblum", email = "boris.hejblum@u-bordeaux.fr", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+Depends: R (>= 3.4.2)
+Imports: Rcpp, itertools, future, future.apply
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: testthat, mvtnorm, covr, microbenchmark
+LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/borishejblum/mypkgr
+BugReports: https://github.com/borishejblum/mypkgr/issues
+NeedsCompilation: yes
+Packaged: 2018-03-06 20:40:55 UTC; borishejblum
+Author: Boris Hejblum [aut, cre]
+Maintainer: Boris Hejblum <boris.hejblum@u-bordeaux.fr>
