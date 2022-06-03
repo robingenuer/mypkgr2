@@ -3,16 +3,20 @@
 %   R/mvnpdfoptim.R, R/mvnpdfoptim_par.R, R/mvnpdfsmart.R
 \name{mvnpdfC}
 \alias{mvnpdfC}
+\alias{timesTwo}
 \alias{mvnpdf}
 \alias{mvnpdf_invC}
 \alias{mvnpdfoptim}
 \alias{mvnpdfoptim_par}
+\alias{mvnpdfoptim_parIter}
 \alias{mvnpdfsmart}
 \title{Based on the implementation from Nino Hardt and Dicko Ahmadou
 http://gallery.rcpp.org/articles/dmvnorm_arma/
 (accessed in August 2014)}
 \usage{
 mvnpdfC(x, mean, varcovM, Log = TRUE)
+
+timesTwo(x)
 
 mvnpdf(x, mean = rep(0, nrow(x)), varcovM = diag(nrow(x)), Log = TRUE)
 
@@ -21,6 +25,14 @@ mvnpdf_invC(x, mean = rep(0, nrow(x)), varcovM = diag(nrow(x)), Log = TRUE)
 mvnpdfoptim(x, mean = rep(0, nrow(x)), varcovM = diag(nrow(x)), Log = TRUE)
 
 mvnpdfoptim_par(x, mean = rep(0, nrow(x)), varcovM = diag(nrow(x)), Log = TRUE)
+
+mvnpdfoptim_parIter(
+  x,
+  mean = rep(0, nrow(x)),
+  varcovM = diag(nrow(x)),
+  Log = TRUE,
+  ncores = 1
+)
 
 mvnpdfsmart(x, mean = rep(0, nrow(x)), varcovM = diag(nrow(x)), Log = TRUE)
 }
@@ -34,6 +46,8 @@ p the number of dimensions}
 
 \item{Log}{logical flag for returning the log of the probability density
 function. Default is \code{TRUE}.}
+
+\item{ncores}{Number of cores used to run the code in parallel}
 }
 \value{
 a list containing the input matrix x and y the multivariate-Normal probability density function

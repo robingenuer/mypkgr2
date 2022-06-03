@@ -21,6 +21,7 @@ mvnpdfC <- function(x, mean, varcovM, Log = TRUE) {
     .Call(`_mypkgr_mvnpdfC`, x, mean, varcovM, Log)
 }
 
+#'@rdname mvnpdf
 #'@export
 timesTwo <- function(x) {
     .Call(`_mypkgr_timesTwo`, x)

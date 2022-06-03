@@ -10,6 +10,7 @@ using namespace Rcpp;
 //   http://adv-r.had.co.nz/Rcpp.html
 //   http://gallery.rcpp.org/
 //
+//'@rdname mvnpdf
 //'@export
 // [[Rcpp::export]]
 NumericVector timesTwo(NumericVector x) {

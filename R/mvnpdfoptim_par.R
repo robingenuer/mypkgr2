@@ -44,7 +44,8 @@ mvnpdfoptim_par <- function(x, mean =  rep(0, nrow(x)), varcovM = diag(nrow(x)),
   return(res)
 }
 
-
+#' @rdname mvnpdf
+#' @param ncores Number of cores used to run the code in parallel
 #' @export
 mvnpdfoptim_parIter <- function(x, mean =  rep(0, nrow(x)),
                                 varcovM = diag(nrow(x)), Log=TRUE, ncores = 1){
