@@ -8,8 +8,8 @@ The goal of mypkgr is to work \!
 You can install mypkgr from github with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("robingenuer/mypkgr")
+# install.packages("remotes")
+remotes::install_github("robingenuer/mypkgr")
 ```
 
 ## Example
