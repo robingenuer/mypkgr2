@@ -9,7 +9,7 @@ You can install mypkgr from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("borishejblum/mypkgr")
+devtools::install_github("robingenuer/mypkgr")
 ```
 
 ## Example
