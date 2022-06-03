@@ -7,6 +7,8 @@
 
 # mypkgr
 
+MODIF
+
 The goal of mypkgr is to work \!
 
 You can install mypkgr from github with:
